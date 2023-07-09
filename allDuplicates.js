@@ -1,14 +1,20 @@
 var findDuplicates = function (nums) {
-  const duplicates = [];
-
-  for (const currentNum of nums) {
-    const otherIndex = Math.abs(currentNum) - 1;
-
-    if (nums[otherIndex] > 0) {
-      nums[otherIndex] = nums[otherIndex] * -1;
+  let i = 0;
+  while (i < nums.length) {
+    let correct = nums[i] - 1;
+    if (nums[i] !== nums[correct]) {
+      [nums[i], nums[correct]] = [nums[correct], nums[i]]; // Swap
     } else {
-      duplicates.push(Math.abs(currentNum));
+      i++;
     }
   }
-  return duplicates;
+
+  let duplicate_nums = [];
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] - 1 != i) {
+      duplicate_nums.push(nums[i]);
+    }
+  }
+
+  return duplicate_nums;
 };
