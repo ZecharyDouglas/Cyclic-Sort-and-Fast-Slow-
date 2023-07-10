@@ -18,3 +18,5 @@ var findDuplicates = function (nums) {
 
   return duplicate_nums;
 };
+
+module.exports = findDuplicates;

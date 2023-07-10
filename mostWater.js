@@ -20,3 +20,4 @@ var maxArea = function (height) {
 
   return maxarea;
 };
+module.exports = maxArea;
