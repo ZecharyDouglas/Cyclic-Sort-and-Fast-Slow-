@@ -1,0 +1,20 @@
+{
+  "name": "cyclic-sort-fast-slow-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "allDuplicates.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZecharyDouglas/Cyclic-Sort-and-Fast-Slow-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZecharyDouglas/Cyclic-Sort-and-Fast-Slow-/issues"
+  },
+  "homepage": "https://github.com/ZecharyDouglas/Cyclic-Sort-and-Fast-Slow-#readme"
+}
