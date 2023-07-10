@@ -3,7 +3,7 @@ var findDuplicates = function (nums) {
   while (i < nums.length) {
     let correct = nums[i] - 1;
     if (nums[i] !== nums[correct]) {
-      [nums[i], nums[correct]] = [nums[correct], nums[i]]; // Swap
+      [nums[i], nums[correct]] = [nums[correct], nums[i]];
     } else {
       i++;
     }
